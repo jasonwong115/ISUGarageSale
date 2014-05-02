@@ -1,0 +1,112 @@
+ul,li,p{
+margin:0;
+padding:0;
+}
+
+a {
+outline:none;
+text-decoration:none;
+}
+
+.hide {
+display:none!important;
+}
+
+.wrap {
+width:940px;
+text-align:left;
+margin:0 auto;
+}
+
+#footer {
+margin:0;
+background:#19191a;
+border-top:5px solid #B51218;
+float:left;
+width:100%;
+min-width:960px;
+clear:both;
+display:inline;
+color:#F9D01A;
+padding:40px 0;
+}
+
+#company-promos {
+float:left;
+display:block;
+margin-bottom:40px;
+}
+
+#company-promos li {
+background-image:url(../images/company_promo_bg.png);
+background-repeat:no-repeat;
+width:200px;
+float:left;
+display:inline;
+margin-left:20px;
+text-align:center;
+padding:0 10px;
+}
+
+#company-promos li:hover {
+background-position:0 -180px;
+}
+
+#company-promos li:first-child {
+margin-left:0;
+}
+
+#company-promos li a {
+font-size:12px;
+color:#A8A8A8;
+display:block;
+padding-top:84px;
+height:96px;
+text-shadow:#222 0 -1px 0;
+}
+
+#company-promos li a:hover {
+color:#F9D01A;
+}
+
+#company-promos li a img {
+margin-top:-184px;
+margin-bottom:10px;
+display:block;
+}
+
+#company-promos li a strong {
+color:#F9D01A;
+display:block;
+width:200px;
+height:20px;
+text-indent:-9000px;
+opacity:.7;
+-webkit-transition:opacity .2s linear;
+}
+
+#footer #copyright {
+font-size:12px;
+text-transform:uppercase;
+}
+
+fieldset,img,abbr,acronym {
+border:0;
+}
+
+#branding,#branding .logo,#footer form dt {
+float:left;
+}
+
+#header .nav li a:hover,#header .nav li.selected a,#company-promos li a:hover strong {
+opacity:1;
+}
+
+#company-promos li a br,#footer form legend {
+display:none;
+}
+.white-font{
+	color:#F9D01A;
+	font-weight:bold;
+	font-size: 135%;
+}

@@ -1,0 +1,254 @@
+/*Created by Jason Wong with inspiration from slider from ISU bookstore with their permission*/
+
+/*********************
+Scroller Styling
+*********************/
+
+.isu-scroller{
+	overflow: hidden;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+
+.isu-scroller .slide-container{
+	position: relative;
+	z-index: 10;
+}
+
+.isu-scroller .slide-container > ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.isu-scroller .slide-container > ul > li{
+	display: none;
+	position: absolute;
+	margin-left:-3px;
+}
+
+.isu-scroller .slide-container > ul > li.active{
+	display: block;
+}
+
+.isu-scroller .swipe-container{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 15;
+}
+
+.isu-scroller .swipe-container .swipe-slide{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.isu-scroller .nav-container{
+	position: absolute;
+	z-index: 20;
+}
+
+.isu-scroller .nav-container > ul{
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.isu-scroller .nav-container > ul > li > span{
+	cursor: pointer;
+}
+
+/*********************
+ISU Slideshow
+*********************/
+
+.isu-slider{
+	background-color: #fff;
+	background-image: -moz-radial-gradient(transparent, rgba(0, 0, 0, 0));
+	background-image: -webkit-radial-gradient(transparent, rgba(0, 0, 0, 0));
+	background-image: radial-gradient(transparent, rgba(0, 0, 0, 0));
+	height: 290px;
+	width: 614px;
+}
+
+.isu-slider .slide-container .slide{
+	display: block;
+}
+
+.isu-slider .slide-container .caption{
+	background-color: #19191a;
+	color: #fff;
+	margin-bottom:0px;
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+	height:45px !important;
+	width: 615px !important;
+	padding-top: 5px !important;
+	padding-left: 5px !important;
+}
+
+.isu-slider .slide-container .caption a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.isu-slider .nav-container{
+	position: static;
+}
+
+.isu-slider .nav-container .directional > li > span{
+	bottom: 0;
+	position: absolute;
+	top: 0;
+	width: 54px;
+	z-index: 20;
+}
+
+.isu-slider .nav-container .directional > li.prev > span{
+	left: 0;
+}
+
+.isu-slider .nav-container .directional > li.next > span{
+	right: 0;
+}
+
+.isu-slider .nav-container .directional > li > span > span{
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAeBAMAAACCtmB8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AkGFDIH6WiBJwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAHiYtIyo3sQAAAAFiS0dEBI9o2VEAAABfSURBVCjPY2AY6sABlcuCxnXAy3dBl3ZB5WFIIwu4YEq7oHAwpR2QNLs4KikpKUN4RkCmiAtCO1ApBMAVg4EDAyrfBSuXkDQBwwk4jZDHCAQLoUAlECWEIpRAchiCAAAunyPd379fUgAAAABJRU5ErkJggg==");
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+	bottom: 0;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	height: 30px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+
+.isu-slider .nav-container .directional > li.prev > span > span{
+	background-position: center left;
+}
+
+.isu-slider .nav-container .directional > li.next > span > span{
+	background-position: center right;
+}
+
+.isu-slider .nav-container .controls{
+	bottom: 0;
+	float: left;
+	padding: 8px;
+	margin:0 !important;
+	position: absolute;
+	right: 0;
+	z-index: 30;
+}
+
+.isu-slider .nav-container .controls > li{
+	float: left;
+}
+
+.isu-slider .nav-container .controls > li > span{
+	border-radius: 12px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	height: 14px;
+	line-height: 14px;
+	margin-left: 6px;
+	text-align: center;
+	width: 14px;
+}
+
+.isu-slider .nav-container .directional > li > span > span,
+.isu-slider .nav-container .controls > li > span{
+	background-color: #222;
+	background-color: rgba(34, 34, 34, 0.8);
+	border: 2px solid #fff;
+}
+
+.isu-slider .nav-container .controls > li.slideshow > span{
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAOCAYAAAA8E3wEAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AkKFAge4nxIJgAAALpJREFUOMvlk7ENwkAMRZ8taAgDMEJqREHDCLTsSA0T0MMcZAAakPwpOCSISHJpggS/Olk+f/tZhr9TRAAgaVDTaR/TtrysGpKukuY9Tat4qJRURkRIqup53vB/LOkYEVtgUcfdoMLMLNX09C5yDTEzARtJB0k7STN3b0VXp/GJjufutQutmfEY6j2WZZiKG7AHVma2dvdzB9IsjRq6vQFLdz+9TtaGFLgAE+DZlVIsC99wZ/GVw/8p3QEVbHfk3pjZwAAAAABJRU5ErkJggg==");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.isu-slider .nav-container .controls > li.slideshow > span.playing{
+	background-position: right center;
+}
+
+.isu-slider .nav-container .controls > li.slideshow > span.paused{
+	background-position: left center;
+}
+
+.isu-slider .nav-container .controls > li > span.active{
+	background-color: #fff;
+	color: #444;
+}
+
+.isu-slider .nav-container .controls,
+.isu-slider .nav-container .directional > li > span{
+	opacity: 0.3;
+	-moz-transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.isu-slider:hover .nav-container .controls,
+.isu-slider .nav-container .directional > li > span:hover{
+	opacity: 1;
+}
+
+.active img {
+	display:block !important;
+	margin:auto !important;
+	border: none !important;
+}
+
+
+.slider-container{
+	background:#272727;
+	border: 0px;
+	height: 290px;
+	width: 100%;
+	z-index: 1;
+}
+
+.slider-background{
+	background:#272727;
+	border-radius: 7px;
+	/*Removes highlighting when user clicks on search box*/
+	outline:none;
+}
+
+/*********************
+Logo Styling Below
+*********************/
+.spacing-bar{
+	position: relative;
+	height: 1px;
+}
+
+.flavias-logo{
+position: relative;
+	z-index: 2;
+    top: -5px;
+}
+
+.facebook-overlay{
+	position: relative;
+	z-index: 2;
+	margin-left:5px;
+	top:  5px;
+}

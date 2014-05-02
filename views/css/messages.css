@@ -1,0 +1,38 @@
+.unread_item, .convo_item {
+    padding: 5px;
+    margin: 0 0 12px 0;
+    border: 1px dotted #ccc;
+    background: #fafafa;
+}
+
+.unread_item h4, .convo_item h4 {
+    margin: 0;
+    background: #efefef;
+    padding: 3px;
+    border-bottom: 1px solid dark-red;
+}
+
+.view_convo {
+    float: right;
+}
+
+/* ===========
+ * Convo stuff
+ */
+.convo_item.mine {
+    border-color: #246D9E;
+    color: #0A3857;
+    background-color: #E6F5FF;
+}
+.convo_item.mine h4 {
+    background-color: #AACEE6;
+    color: #0A3857;
+}
+.convo_item.theirs {
+    
+}
+
+textarea {
+    width: 400px;
+    height: 160px;
+}

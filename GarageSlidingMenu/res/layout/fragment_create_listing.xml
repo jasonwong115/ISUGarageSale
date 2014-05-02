@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+			<LinearLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_weight="2" >
+	            <TextView
+	                android:id="@+id/textSubmitListing"
+	                android:layout_width="match_parent"
+	                android:layout_height="85dp"
+			        android:layout_weight="1"
+			        android:background="@color/list_background"
+			        android:gravity="center"
+	                android:text="Create a Listing"
+	                android:textAppearance="?android:attr/textAppearanceLarge" 
+	                android:textColor="@color/counter_text_color"
+			        android:textSize="30sp" />
+	        </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingTop="15dp">
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="2">
+	            <TextView
+	                android:id="@+id/textTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="Title"
+	                android:gravity="center_vertical|right"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="15">
+	            <EditText
+	                android:id="@+id/inputTitle"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10" >
+	                <requestFocus />
+	            </EditText>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingTop="15dp">
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="2">
+	            <TextView
+	                android:id="@+id/textDescription"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:gravity="center_vertical|right"
+	                android:text="Description"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="15">
+	            <EditText
+	                android:id="@+id/inputDescription"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10"/>
+	        </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingTop="15dp">
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="2">
+	            <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="Asking Price"
+	                android:gravity="center_vertical|right"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="15">
+	            <EditText
+	                android:id="@+id/inputAskingPrice"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10" />
+          	</LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingTop="15dp">
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="2">
+	            <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="Other Offer"
+	                android:gravity="center_vertical|right"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="15">
+	            <EditText
+	                android:id="@+id/inputOtherOffer"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:inputType="textMultiLine" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingTop="15dp">
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="15">
+	            <Button
+	                android:id="@+id/submitCreateListing"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Submit" />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

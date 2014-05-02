@@ -1,0 +1,21 @@
+.splitform {
+	width: 46%;
+	padding:2%;
+	padding-bottom: 80px;
+}
+.splitform form label, .splitform br {
+	width: 100%;
+	clear: both;
+}
+.splitform form input:not([type="radio"]), .splitform form textarea {
+	width: 350px;
+	float: right;	    
+}
+.splitform form textarea {
+	height: 100px;
+}
+.splitform .radiolist {
+	width: 350px;
+	float: right;
+	display: block;
+}

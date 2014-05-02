@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>WYSIWYG Testing 1</title>
+	<script src="jquery-ui-1.10.4.custom/js/jquery-1.10.2.js"></script>
+	<script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="wysiwyg.js"></script>
+        <script src="colpick-jQuery-Color-Picker-master/js/colpick.js"></script>
+        <link rel="stylesheet" type="text/css" href="wysiwyg.css" />
+	<link href="jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="colpick-jQuery-Color-Picker-master/css/colpick.css" />
+        <style type="text/css">
+            #wysiwyg1 {
+                width: 400px;
+                height: 120px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <textarea id="wysiwyg1"> Interesting test
+        </textarea>
+    
+    
+        <script type="text/javascript">
+            $(function(){
+                $(".wysiwyg").wysiwyg();
+            });
+        </script>
+    </body>
+</html>

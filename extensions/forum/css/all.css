@@ -1,0 +1,147 @@
+
+/* To add a bit of styleing to the group elements in the forum boards
+ * display
+ */
+div.board_group {
+    margin-bottom: 8px;
+}
+
+
+/* Hive group headigs some distinction */
+div.board_group h3 {
+    margin: 0;
+    background-color: #efefef;
+    padding: 2px 6px;
+    height: 28px;
+    line-height: 28px;
+}
+
+/* And similarly give the descriptions some as well */
+div.board_group small {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/* And set this off to the side */
+div.board_group h3 a {
+    font-weight: 100;
+    font-size: 14px;
+    float: right;
+}
+
+
+/* give the immediate children a little space */
+div.board_group>div {
+}
+
+div.board_group div.forum_board {
+    padding: 5px;
+    background: #fcfcfc;
+    border: 1px solid #efefef;
+
+}
+
+/* For hovering */
+div.board_group div.forum_board:hover {
+    background: #f9f9f9;
+    border-color: #ddd;
+
+}
+
+/* Anchor stylings for board links */
+div.forum_board a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+div.board_group div.forum_board h4 {
+    margin: 0;
+    display: inline;
+    float: left;
+    padding-right: 5px;
+}
+
+/* For action messages on the forum management pages */
+.forum-admin-action-message {
+    background: #F6ECA1;
+    color: #A85808;
+    padding: 2px 10px;
+}
+
+/* Give the forum displays some padding */
+div.forum_pad {
+    padding: 0 5px;
+}
+
+.wysiwyg {
+    width: 450px;
+    height: 220px;
+}
+
+/* Hive group headigs some distinction */
+div.forum_board_box h3 {
+    background-color: #efefef;
+    padding: 2px 6px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+div.forum_board_box h3 small {
+    font-weight: 100;
+}
+
+/* Styles for threads on the board page */
+div.forum_thread {
+    background: #fcfcfc;
+    border: 1px solid #efefef;
+}
+/* For hovering */
+div.forum_thread:hover {
+    background: #f9f9f9;
+    border-color: #ddd;
+
+}
+.forum_thread a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+/* Floating right reply count */
+.forum-count {
+    float: right;
+    padding: 5px 8px;
+}
+
+/* add just a bit of size */
+div.forum_thread span.forum-biggish {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+/* For displaying thread content */
+.forum-thread-display, .forum-reply-display {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #B4D7F0;
+	background: #EDF3F7;
+}
+
+div.forum-reply-display{
+    border: 1px solid #bbb;
+    background: #fefefe;
+}
+div.forum-reply-display hr {
+	border: 0;
+	background-color: #eee;
+}
+
+/* Pagination styles */
+.forum_pagination {
+    margin: 5px 0;
+}

@@ -1,0 +1,540 @@
+/*created by Jason Wong inspiration from ebay*/
+html.ie8 .gradient.row,html.ie9 .gradient.row {
+    background: url(data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAkCAYAAABBn/B2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MUJFQzZEMjAzOEMxMUUzODFBNjg5QTVFQkM0NjdFMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MUJFQzZEMzAzOEMxMUUzODFBNjg5QTVFQkM0NjdFMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI4RjY1Rjg5MDM4MzExRTM4MUE2ODlBNUVCQzQ2N0UyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI4RjY1RjhBMDM4MzExRTM4MUE2ODlBNUVCQzQ2N0UyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xJ6BTwAAADNJREFUeNpi/P//fwMDGmAB4n9EC/6lTCVWwT+UqaSb4G8aqBxYi2ghSGEU/6VyUgQIMACJlSaNYu1gggAAAABJRU5ErkJggg==) repeat}
+
+.box-shadow-hover {
+    -webkit-box-shadow: 0 2px 2px rgba(50,50,50,0.1);
+    -moz-box-shadow: 0 2px 2px rgba(50,50,50,0.1);
+    box-shadow: 0 2px 2px rgba(50,50,50,0.1)}
+.topnav {
+    position: relative;
+    background: -webkit-linear-gradient(left,rgba(247,247,247,0) 0,rgba(247,247,247,0.9) 6%,rgba(247,247,247,0.9) 50%,rgba(247,247,247,0.9) 94%,rgba(247,247,247,0) 100%);
+    background: -moz-linear-gradient(left,rgba(247,247,247,0) 0,rgba(247,247,247,0.9) 6%,rgba(247,247,247,0.9) 50%,rgba(247,247,247,0.9) 94%,rgba(247,247,247,0) 100%);
+    background: -ms-linear-gradient(left,rgba(247,247,247,0) 0,rgba(247,247,247,0.9) 6%,rgba(247,247,247,0.9) 50%,rgba(247,247,247,0.9) 94%,rgba(247,247,247,0) 100%);
+    background: -o-linear-gradient(left,rgba(247,247,247,0) 0,rgba(247,247,247,0.9) 6%,rgba(247,247,247,0.9) 50%,rgba(247,247,247,0.9) 94%,rgba(247,247,247,0) 100%);
+    background: linear-gradient(left,rgba(247,247,247,0) 0,rgba(247,247,247,0.9) 6%,rgba(247,247,247,0.9) 50%,rgba(247,247,247,0.9) 94%,rgba(247,247,247,0) 100%);
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #ddd;
+    margin: 0 0 10px 0;
+    height: 35px}
+.topnav a {
+    color: #333}
+.topnav>table {
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    overflow: hidden}
+.topnav td {
+    text-align: center;
+    vertical-align: top}
+body.sz1200 .topnav td.right-padding {
+    width: 20px}
+body.sz980 .topnav td.right-padding {
+    width: 10px}
+.topnav td.section {
+    width: 1px}
+.topnav td.section a.rt:hover {
+    color: }
+.topnav td.section.active .rt {
+    padding-bottom: 9px;
+    border-bottom: 2px solid #555;
+    cursor: default;
+    font-weight: bold}
+.topnav td.section.home {
+    padding-left: 15px;
+    padding-right: 15px}
+body.sz1200 .topnav td.section.home {
+    padding-left: 40px;
+    padding-right: 20px}
+body.sz980 .topnav td.section.home {
+    padding-left: 20px;
+    padding-right: 15px}
+.topnav td.section.today,.topnav td.section.featured {
+    padding-left: 15px;
+    padding-right: 15px}
+body.sz1200 .topnav td.section.today,body.sz1200 .topnav td.section.featured {
+    padding-left: 20px;
+    padding-right: 20px}
+.topnav td.section.today.pt-spotlight {
+    background: #FFF}
+.topnav .divider-parent {
+    width: 1px}
+.topnav .divider-parent .divider {
+    display: block;
+    width: 1px;
+    height: 24px;
+    background: #ddd;
+    margin-top: 6px;
+    margin-left: 15px;
+    margin-right: 15px}
+body.sz1200 .topnav .divider-parent .divider {
+    margin-left: 20px;
+    margin-right: 20px}
+.topnav .more {
+    display: none}
+.topnav .cat,.topnav .scat {
+    font-size: 12px;
+    width: auto;
+    z-index: 99910;
+    margin: 0;
+    height: 34px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: transparent;
+    padding-right: 4px;
+    padding-left: 4px}
+.topnav .cat a.rt:hover,.topnav .scat a.rt:hover {
+    z-index: 999300;
+    color: ;
+    text-decoration: underline}
+.topnav .cat a.rt:hover i,.topnav .scat a.rt:hover i {
+    display: none}
+.topnav .cat.show,.topnav .scat.show {
+    z-index: 9991000;
+    background: #fff;
+    -webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.04);
+    -moz-box-shadow: 3px 3px 1px rgba(0,0,0,0.04);
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.04);
+    border-bottom: solid 1px #fff;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd}
+.topnav .cat.show.more,.topnav .scat.show.more {
+    border-bottom: solid 1px #ddd}
+.topnav .cat.show.today a.rt,.topnav .scat.show.today a.rt {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px}
+.topnav .cat.show span.rt:hover,.topnav .scat.show span.rt:hover {
+    color: #555;
+    text-decoration: none}
+.topnav .cat.show .sub,.topnav .scat.show .sub {
+    display: block}
+.topnav .cat .sub,.topnav .scat .sub {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 36px;
+    left: 0;
+    right: 0;
+    height: 302px;
+    -webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.04);
+    -moz-box-shadow: 3px 3px 1px rgba(0,0,0,0.04);
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.04);
+    border-left: solid 2px #B51218;
+    border-right: solid 2px #B51218;
+    border-bottom: solid 2px #B51218;
+    border-radius: 0 0 2px 2px;
+    z-index: 9991000}
+.topnav .cat .sub .navRtm,.topnav .scat .sub .navRtm {
+    height: 270px;
+	width: 600px;
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 14px}
+body.sz1200 .topnav .cat .sub .navRtm,body.sz1200 .topnav .scat .sub .navRtm {
+    width: 770px}
+body.sz980 .topnav .cat .sub .navRtm,body.sz980 .topnav .scat .sub .navRtm {
+    width: 550px}
+.topnav .cat .sub .trending,.topnav .scat .sub .trending {
+    margin-left: 40px;
+    margin-right: 30px}
+body.sz600 .topnav .cat .sub .trending,body.sz600 .topnav .scat .sub .trending {
+    margin-left: 20px;
+    margin-right: 10px}
+.topnav .cat .sub .best,.topnav .scat .sub .best,.topnav .cat .sub .trending,.topnav .scat .sub .trending {
+    width: 310px}
+body.sz980 .topnav .cat .sub .best,body.sz980 .topnav .scat .sub .best,body.sz980 .topnav .cat .sub .trending,body.sz980 .topnav .scat .sub .trending {
+    width: 300px}
+body.sz600 .topnav .cat .sub .best,body.sz600 .topnav .scat .sub .best,body.sz600 .topnav .cat .sub .trending,body.sz600 .topnav .scat .sub .trending {
+    width: 200px}
+.topnav .cat .sub .viewall,.topnav .scat .sub .viewall {
+    position: absolute;
+    bottom: 0}
+.topnav .cat .sub .viewall a,.topnav .scat .sub .viewall a {
+    color: }
+.topnav .cat .sub .myCollections,.topnav .scat .sub .myCollections {
+    width: 310px}
+.topnav .cat .sub .myCollections .title,.topnav .scat .sub .myCollections .title {
+    margin-left: 30px}
+body.sz600 .topnav .cat .sub .myCollections .title,body.sz600 .topnav .scat .sub .myCollections .title {
+    margin-left: 10px}
+.topnav .cat .sub .myCollections .empty,.topnav .scat .sub .myCollections .empty {
+    margin-top: 18px;
+    height: 200px;
+    text-align: center;
+    background-color: #f6f6f6}
+.topnav .cat .sub .myCollections .no-collections,.topnav .scat .sub .myCollections .no-collections {
+    color: #555;
+    padding: 28px 18px;
+    font-size: 14px;
+    line-height: 16px}
+.topnav .cat .sub .myCollections .start-collection,.topnav .scat .sub .myCollections .start-collection {
+    padding: 0 18px;
+    color: #777;
+    font-size: 14px;
+    line-height: 20px}
+.topnav .cat .sub .myCollections .data,.topnav .scat .sub .myCollections .data {
+    padding-left: 30px;
+    height: 200px;
+    border-left: 1px solid #ddd}
+body.sz600 .topnav .cat .sub .myCollections .data,body.sz600 .topnav .scat .sub .myCollections .data {
+    padding-left: 10px}
+.topnav .cat .sub .myCollections .data .linear .holder,.topnav .scat .sub .myCollections .data .linear .holder {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    position: absolute}
+.topnav .cat .sub .myCollections .data .linear .holder img,.topnav .scat .sub .myCollections .data .linear .holder img {
+    max-width: 35px}
+.topnav .cat .sub .myCollections .text,.topnav .scat .sub .myCollections .text {
+    position: absolute;
+    left: 75px;
+    height: 36px;
+    overflow: hidden}
+.topnav .cat .sub .myCollections li,.topnav .scat .sub .myCollections li {
+    height: 36px;
+    margin-bottom: 8px}
+.topnav .cat .sub .myCollections .star,.topnav .scat .sub .myCollections .star {
+    background-image: url("http: //p.ebaystatic.com/aw/row/ete/common/common_sprite_01.png");
+    background-repeat: no-repeat;
+    padding: 2px 0;
+    width: 15px;
+    height: 12px;
+    display: inline-block;
+    background-position: -61px 0;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 0 2px}
+.topnav .cat .sub .myCollections .colList,.topnav .scat .sub .myCollections .colList {
+    width: 130px!important;
+    height: 200px}
+.topnav .cat .sub .myCollections .imgs,.topnav .scat .sub .myCollections .imgs {
+    left: 30px}
+body.sz980 .topnav .cat .sub .myCollections,body.sz980 .topnav .scat .sub .myCollections {
+    width: 230px}
+body.sz600 .topnav .cat .sub .myCollections,body.sz600 .topnav .scat .sub .myCollections {
+    width: 100px}
+.topnav .cat .sub .best li,.topnav .scat .sub .best li,.topnav .cat .sub .trending li,.topnav .scat .sub .trending li {
+    margin-bottom: 16px}
+.topnav .cat .sub .data,.topnav .scat .sub .data {
+    margin-top: 20px;
+    position: relative}
+.topnav .cat .sub .imgs,.topnav .scat .sub .imgs {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none}
+.topnav .cat .sub .imgs .alpha,.topnav .scat .sub .imgs .alpha,.topnav .cat .sub .imgs .beta,.topnav .scat .sub .imgs .beta,.topnav .cat .sub .imgs .gamma,.topnav .scat .sub .imgs .gamma {
+    float: left;
+    position: relative;
+    border: 1px solid #ddd;
+    box-sizing: border-box}
+.topnav .cat .sub .imgs .alpha:hover,.topnav .scat .sub .imgs .alpha:hover,.topnav .cat .sub .imgs .beta:hover,.topnav .scat .sub .imgs .beta:hover,.topnav .cat .sub .imgs .gamma:hover,.topnav .scat .sub .imgs .gamma:hover {
+    border-color: #AAA}
+.topnav .cat .sub .imgs .beta,.topnav .scat .sub .imgs .beta {
+    clear: left;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    margin-right: 4px}
+.topnav .cat .sub .imgs .gamma,.topnav .scat .sub .imgs .gamma {
+    width: 64px;
+    height: 64px;
+    overflow: hidden}
+.topnav .cat .sub .imgs .alpha,.topnav .scat .sub .imgs .alpha {
+    margin-bottom: 4px;
+    width: 132px;
+    height: 132px;
+    overflow: hidden}
+.topnav .cat .sub .best,.topnav .scat .sub .best,.topnav .cat .sub .trending,.topnav .scat .sub .trending,.topnav .cat .sub .myCollections,.topnav .scat .sub .myCollections {
+    float: left}
+.topnav .cat .sub .colList,.topnav .scat .sub .colList {
+    float: left;
+    margin-left: 142px;
+    width: 160px;
+    height: 200px;
+    overflow: hidden}
+.topnav .cat .sub .colList ul,.topnav .scat .sub .colList ul {
+    height: 180px;
+    overflow: hidden}
+.topnav .cat .sub .colList li,.topnav .scat .sub .colList li {
+    max-height: 24px;
+    overflow: hidden}
+body.sz980 .topnav .cat .sub .colList,body.sz980 .topnav .scat .sub .colList {
+    width: 150px}
+.topnav .cat .sub .loader,.topnav .scat .sub .loader {
+    margin-top: 120px}
+.topnav .title {
+    padding: 0 0 10px;
+    color: #555;
+    border-bottom: 1px solid #dadada;
+    font-weight: bold;
+    font-size: 12px}
+.topnav .today .sub .content {
+    margin: 25px auto}
+.topnav .today .sub .content a:hover {
+    font-weight: bold;
+    color: }
+body.sz980 .topnav .today .sub .content {
+    width: 900px!important}
+body.sz1200 .topnav .today .sub .content {
+    width: 1000px!important}
+.topnav .today .title {
+    text-align: left}
+.topnav .today li {
+    display: list-item;
+    list-style: none}
+.topnav .today .active {
+    font-weight: bold;
+    text-decoration: none}
+.topnav .today .active .imgs {
+    display: block}
+.topnav .rt {
+    color: #555;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px transparent;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap}
+.topnav .rt:hover {
+    color: #000;
+    text-decoration: underline}
+.topnav .expand-container {
+    position: absolute;
+    top: -500px;
+    z-index: 9991001}
+.topnav .expand {
+    display: block;
+    font-size: 11px;
+    text-decoration: underline;
+    background-color: #fff7ed;
+    z-index: -1;
+    padding: 4px}
+.topnav span.rt:hover {
+    color: #555;
+    text-decoration: none}
+.topnav .col {
+    width: 129px;
+    float: left;
+    padding-left: 40px;
+    padding-top: 30px}
+.topnav .col.last {
+    padding-right: 30px;
+	width:165px;}
+.topnav .col .title {
+    padding: 0 0 10px;
+    color: #555;
+    border-bottom: 1px solid #dadada;
+    font-weight: bold;
+    font-size: 12px}
+.topnav .col .title .a {
+    text-decoration: none}
+.topnav .col li {
+    padding: 15px 0 0;
+    display: block}
+.topnav .col li.folc {
+    border-top: 1px solid #CCC;
+    margin: 10px 0 0;
+    padding: 10px 0 0}
+.topnav .icn a {
+    padding: 5px 0 5px 38px;
+    position: relative;
+    display: block}
+.topnav .icn img {
+    position: absolute;
+    top: 0;
+    left: 0}
+.topnav .icn span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('http: //p.ebaystatic.com/aw/home/feed/sprite_201402131500.png') -651px -1px no-repeat}
+.topnav .icn span.antq {
+    background-position: -651px -1px}
+.topnav .icn span.art {
+    background-position: -651px -33px}
+.topnav .icn span.bdmt {
+    background-position: -651px -65px}
+.topnav .icn span.bks {
+    background-position: -651px -97px}
+.topnav .icn span.boat {
+    background-position: -651px -129px}
+.topnav .icn span.cin {
+    background-position: -651px -161px}
+.topnav .icn span.cls {
+    background-position: -651px -193px}
+.topnav .icn span.clt {
+    background-position: -651px -225px}
+.topnav .icn span.cnp {
+    background-position: -651px -257px}
+.topnav .icn span.cnt {
+    background-position: -651px -289px}
+.topnav .icn span.cpa {
+    background-position: -651px -321px}
+.topnav .icn span.crf {
+    background-position: -651px -353px}
+.topnav .icn span.cyc {
+    background-position: -651px -385px}
+.topnav .icn span.ddl {
+    background-position: -651px -417px}
+.topnav .icn span.games {
+    background-position: -651px -449px}
+.topnav .icn span.dlbr {
+    background-position: -683px -1px}
+.topnav .icn span.dnm {
+    background-position: -683px -33px}
+.topnav .icn span.fash {
+    background-position: -683px -65px}
+.topnav .icn span.faw {
+    background-position: -683px -97px}
+.topnav .icn span.fish {
+    background-position: -683px -129px}
+.topnav .icn span.fitn {
+    background-position: -683px -161px}
+.topnav .icn span.fnj {
+    background-position: -683px -193px}
+.topnav .icn span.furn {
+    background-position: -683px -225px}
+.topnav .icn span.gar {
+    background-position: -683px -257px}
+.topnav .icn span.ggd {
+    background-position: -683px -289px}
+.topnav .icn span.glf {
+    background-position: -683px -321px}
+.topnav .icn span.hair {
+    background-position: -683px -353px}
+.topnav .icn span.hng {
+    background-position: -683px -385px}
+.topnav .icn span.htg {
+    background-position: -683px -417px}
+.topnav .icn span.icfjw {
+    background-position: -715px -1px}
+.topnav .icn span.ickids {
+    background-position: -715px -33px}
+.topnav .icn span.icktc {
+    background-position: -715px -65px}
+.topnav .icn span.icld {
+    background-position: -715px -97px}
+.topnav .icn span.icmusc {
+    background-position: -715px -129px}
+.topnav .icn span.icosp {
+    background-position: -715px -161px}
+.topnav .icn span.icptry {
+    background-position: -715px -193px}
+.topnav .icn span.icpwtl {
+    background-position: -715px -225px}
+.topnav .icn span.icsprt {
+    background-position: -715px -257px}
+.topnav .icn span.icstm {
+    background-position: -715px -289px}
+.topnav .icn span.icsv {
+    background-position: -715px -321px}
+.topnav .icn span.ictsp {
+    background-position: -715px -353px}
+.topnav .icn span.icvjw {
+    background-position: -715px -385px}
+.topnav .icn span.icwsh {
+    background-position: -715px -417px}
+.topnav .icn span.kft {
+    background-position: -747px -1px}
+.topnav .icn span.knb {
+    background-position: -747px -33px}
+.topnav .icn span.mcy {
+    background-position: -747px -65px}
+.topnav .icn span.mku {
+    background-position: -747px -97px}
+.topnav .icn span.mns {
+    background-position: -747px -129px}
+.topnav .icn span.msk {
+    background-position: -747px -161px}
+.topnav .icn span.nail {
+    background-position: -747px -193px}
+.topnav .icn span.nct {
+    background-position: -747px -225px}
+.topnav .icn span.pet {
+    background-position: -747px -257px}
+.topnav .icn span.pna {
+    background-position: -747px -289px}
+.topnav .icn span.skn {
+    background-position: -747px -321px}
+.topnav .icn span.spm {
+    background-position: -747px -353px}
+.topnav .icn span.tru2 {
+    background-position: -747px -385px}
+.topnav .icn span.wch {
+    background-position: -747px -417px}
+.topnav.exp {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    height: 175px;
+    background: #fff;
+    z-index: 999200;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3)}
+.topnav.exp .lw {
+    display: none}
+.topnav .expdr {
+    background: #fdfdfd;
+    bottom: 0;
+    cursor: pointer;
+    font-weight: bold;
+    height: 35px;
+    left: 0;
+    line-height: 35px;
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #CCC}
+.topnav .expdr span {
+    margin: 0 0 0 15px}
+.topnav .expdr b {
+    background: url() -209px -390px no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 7px;
+    bottom: 4px}
+.topnav.exp.open .expdr b {
+    background-position: -259px -390px}
+.sub ul {
+    text-align: left}
+.explore-img {
+    width: 777px;
+    margin: 10px 0 0 10px}
+.navRtm .fallback {
+    width: 100%;
+    height: 100%;
+    background: white}
+html.ie8 .topnav .cat .sub {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#CCCCCC')"}
+html.ie8 .topnav .cat.show {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#CCCCCC')"}
+html.ie8 .topnav.exp {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#CCCCCC')"}
+.topnavlayer {
+    display: none}
+.topnavlayer h3 {
+    padding: 12px;
+    border-bottom: 1px solid #ccc}
+.topnavlayer h3.clickable {
+    cursor: pointer}
+.topnavlayer h3.clickable:hover {
+    background: ;
+    color: #fff}
+.topnavlayer h3.clickable:hover a {
+    color: #fff}
+.topnavlayer h3.last {
+    border-bottom: 0}
+.topnavlayer h3 a {
+    color: #555;
+    font-weight: 200;
+    text-decoration: none}

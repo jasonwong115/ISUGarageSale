@@ -1,0 +1,81 @@
+a {
+	text-decoration: none;
+}
+
+a:active, a:active * { 
+	outline: none !important; 
+}
+
+a:focus, a:focus * { 
+	outline: none !important; 
+}
+
+nav ol, nav ul {
+	list-style: none;
+}
+
+/*
+	Nav
+*/
+
+.special-menu{
+	float:right;
+	display:inline;
+	padding-right:4px;
+	padding-left:8px;
+	color:#9e9380;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;
+}
+	
+		
+nav ul li {
+	float: left;
+}
+
+.tnav {
+	border-top: 5px solid #B51218;
+}
+
+.cnav {
+	border-top: 5px solid #F9D01A;
+}
+
+.wnav {
+	border-top: 5px solid #B51218;
+}
+
+.inav {
+	border-top: 5px solid #F9D01A;
+}
+
+
+.idnav {
+	border-top: 5px solid #B51218;
+}
+
+
+.anav {
+	border-top: 5px solid #F9D01A;
+}
+
+.anav a {
+	border-right: 1px solid #C9C8C7;
+}
+	
+.internal {
+	display: block;
+	color:#19191a;
+	font: 14px/14px 'Museo300', Helvetica, Arial, sans-serif;
+	text-shadow: #ffffff 0px 1px 1px;
+	margin-top:10px;
+	padding: 8px 12px 14px 12px;
+	border-left: 1px solid #C9C8C7;
+	text-decoration: none;
+}
+	
+.internal:hover {
+	color: #495058;
+}
+

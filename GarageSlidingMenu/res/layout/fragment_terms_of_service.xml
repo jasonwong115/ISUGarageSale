@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+		    <TextView
+		        android:id="@+id/txtLabel"
+		        android:layout_width="wrap_content"
+				android:layout_height="85dp"
+		        android:layout_weight="1"
+		        android:background="@color/list_background"
+		        android:gravity="center"
+		        android:text="Terms of Service"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="@color/counter_text_color"
+		        android:textSize="30sp" />
+		 </TableRow>
+		 <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+		
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:text="This website is independent of but supported by Iowa State University. By accessing our websites, server information, or content you thereby agree to the following Terms of Service, last updated February 2, 2014."
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+		    <TextView
+		        android:id="@+id/offerComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:text="I certify that I am a student, professor, or faculty member at Iowa State University. I understand that once I graduate or if I am not one of the allowed members listed above that my account will be terminated and any of my personal information will not be redistributed for any reason."
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+		    <TextView
+		        android:id="@+id/offerComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:text="I agree not to use or provide software (except for general purpose web browsers and email clients, or software expressly licensed by us) or services that interact or interoperate with ISU Garage Sale, e.g. for downloading, uploading, posting, flagging, emailing, search, or mobile use. Robots, spiders, scripts, scrapers, crawlers, etc. are prohibited, as are misleading, unsolicited, unlawful, and/or spam postings/email. I agree not to collect users' personal and/or contact information ('PI')."
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+		    <TextView
+		        android:id="@+id/offerComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:text="I agree that if I see or have been asked to take part in illegal activity that I will contact the administrators of ISU Garage Sale as soon as possible to be dealt with accordingly."
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+		    <TextView
+		        android:id="@+id/offerComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:text="I will put the safety and health of everyone at Iowa State University first by following all Federal and State laws. I will not sell any of the listed items below and I understand that any item I post is subject to review for removal. Additionally, any serious offences will result in the contacting of local law enforcement and the university will be notified of my actions."
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		<TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+		    <TextView
+		        android:id="@+id/offerComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:layout_marginLeft="15dp"
+		        android:paddingRight="15dp"
+		        android:text="Adult Only category
+-Alcohol
+-Animals and wildlife products – examples include live animals, mounted specimens, and ivory
+-Cell phone (wireless) service contracts
+-Clothing, used
+-Cosmetics, used
+-Counterfeit currency and stamps
+-Credit cards
+-Describing drugs and drug-like substances
+-Drugs and drug paraphernalia
+-Electronic surveillance equipment – examples include wiretapping devices and telephone bugging devices
+-Embargoed goods and prohibited countries – examples include items from Cuba
+-Firearms, weapons, and knives – examples include pepper spray, replicas, and stun guns (see also military items)
+-Government documents, IDs, and licenses
+-Government, transit, and shipping-related items – examples include airplane operations manuals, subway employee uniforms, and U.S. Postal Service (USPS) mailbags
+-Hazardous materials – examples include batteries, fireworks, and refrigerants
+-Human remains and body parts
+-Importation of goods into the US – examples include CDs that were intended only for distribution in a certain country
+-Items encouraging illegal activity – examples include an eBook describing how to create methamphetamine
+-Mailing lists and personal information
+-Medical devices – examples include contact lenses, pacemakers, and surgical instruments
+-Military items (see also firearms, weapons, and knives)
+-Pesticides
+-Prohibited services
+-Real estate
+-Recalled items
+-Slot machines
+-Stamps
+-Stocks and other securities
+-Stolen property and property with removed serial numbers
+-Surveillance equipment
+-Tobacco"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

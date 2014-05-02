@@ -1,0 +1,247 @@
+/*Created by Jason Wong*/
+
+span.stars, span.stars span {
+	display: block;
+	background: url(../images/stars.png) 0 -17px repeat-x;
+	width: 80px;
+	height: 16px;
+}
+
+span.stars span {
+	background-position: 0 0;
+}
+
+.leftmost{
+	float: left;
+}
+html{
+	height: 100%;
+}
+
+body, .search-bar, .footer-table,.slider-container{
+	margin: 0 auto;
+	padding: 0;
+	min-width: 1030px;
+}
+
+.unread_title {
+    margin: 0 0 18px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ================================
+ * Persistent Title Specific datas! 
+ */
+#persistent_title {
+    background: #efefef;
+    border-bottom: 1px solid #ccc;
+}
+
+#persistent_title .center_area {
+    margin: 0 auto;
+    width: 1020px;
+    color: #666;
+    padding: 10px 0 0 0;
+    clear: both;
+}
+
+#persistent_title .center_area h1 {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: #333 /*#7A0000*/;
+    display: inline;
+}
+
+#persistent_title .center_area h1 a{
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #7A0000;
+}
+
+#persistent_title .center_area h1 a:hover{
+    
+    color: #333 /*#7A0000*/;
+}
+
+#persistent_title .center_area .right_stuff {
+    float: right;
+    margin-top: -8px;
+}
+
+#persistent_title .center_area .user_welcome {
+    text-align: right;
+    font-size: 14px;
+}
+
+/* -----------------------------
+ * I know its a hack, forgive me
+ */
+#persistent_title .center_area hr {
+    display: block; 
+    clear: left; 
+    margin: -0.66em 0;
+    visibility: hidden;
+}
+
+
+
+/* ====================================
+ * Main content area and sidebar styles
+ */
+.main_gutter {
+    margin: 0 290px 0 10px;
+}
+
+.sidebar_area {
+    float: right;
+    width: 270px;
+    margin: -0px 10px 60px 0;
+}
+
+.main_gutter.right {
+    margin: 0 10px 0 290px;
+}
+
+.sidebar_area.left {
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+/* =======================
+ * Important Header styles
+ */
+.center-wrapper h2 {
+    padding: 5px 10px;
+    border-bottom: 1px dotted #CC0A0A;
+    background: #f3f3f3;
+}
+
+/* ====================
+ * Admin panel stylings
+ */
+.admin_panel {
+    background: #333;
+    color: #fefefe;
+}
+
+.admin_panel .center_admin {
+    width: 1014px;
+    margin: auto;
+    padding: 3px 0;
+}
+
+.admin_panel .center_admin .right_link {
+    float: right;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* For warnings above */
+.warning_panel {
+    background: #F6ECA1;
+    color: #A85808;
+    padding: 2px 10px;
+} 
+
+/* =================================
+ * Not persistant title info anymore
+ */
+
+.center-wrapper,.footer{
+	width: 1030px;
+	bottom: 0;
+	clear: both;
+}
+
+.search-box,#search-button,.slider-container,.footer{
+	border-radius: 7px;
+	border-style: solid;
+	border-width:1px;
+	/*Removes highlighting when user clicks on search box*/
+	outline:none;
+}
+
+body{
+	background: #FFFFFF;
+	font-family: Helvetica, sans-serif; font-size: 16px; 
+	min-height:100%;
+	color: white;
+}
+
+.center-wrapper{
+	background: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	color: #333;
+}
+
+.search-box{
+	width:820px;
+	margin: 0 0 0 0;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+.search-bar-area{
+	position: relative;
+	margin: 10px 0 6px 0;
+	width: 100%;
+	height: 25px;
+	top: 0;
+}
+.search-bar{
+	/*height: 60px;*/
+	width: 100%;
+	display: block;
+}
+
+#search-button{
+	border-color: #000000;
+	width: 200px;
+	margin: 0;
+	color:white;
+	background:#1fbbdd;
+}
+
+.main-container{
+	height:100%;
+	min-height:400px;
+	margin: 0;
+	padding-bottom:80px;
+}
+
+.table-elements{
+	font-weight: normal;
+}
+
+table tr td a {
+	border:none;
+	outline:none;
+	text-decoration:none;
+	color:inherit;
+}
+
+/* =====================
+ * Global message styles
+ */
+.submit_message {
+    border: 1px solid #E39D4E;
+    color: #965000;
+    background: #FFECBF;
+    padding: 4px;
+}
+
+
+/* --------------------
+ * Amazon result things
+ */
+.amazon-item-match a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}

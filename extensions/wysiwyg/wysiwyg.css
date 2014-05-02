@@ -1,0 +1,144 @@
+
+/* Master container block */
+div.wysiwyg_container {
+    display: inline-block;
+}
+
+/* Design Mode iframe that holds content */
+div.wysiwyg_container iframe, div.wysiwyg_container textarea {
+    border: 1px solid #b6b6b6;
+    margin: 0;
+}
+
+div.wysiwyg_container textarea {
+    padding: 10px;
+    margin-right: -2px;
+    resize: none;
+}
+
+/* Primary toolbar */
+div.wysiwyg_container div.wysiwyg_toolbar {
+    background: #f7f7f7;    
+    border: 1px solid #999999;
+    padding: 2px 0 0 2px;
+    border-bottom: 0;
+    clear: right;
+}
+
+div.wysiwyg_container div.wysiwyg_resize {
+    background: #f7f7f7;    
+    border: 1px solid #999999;
+    border-top: 0;
+    height: 4px;
+    cursor: ns-resize;
+    clear: left;
+    margin-top: 1px;
+}
+
+div.wysiwyg_container div.wysiwyg_toolbar div{
+    display: inline-block;
+    white-space: nowrap;
+    width: 20px;
+    height: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 2px;
+    background: no-repeat center center;
+    border-bottom: 2px solid #f7f7f7;
+}
+
+div.wysiwyg_container div.wysiwyg_toolbar div:hover {
+    background-color: #e6e6e6;
+}
+
+/* Individual button styles for wysiwyg action buttons
+ */
+/* bold button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_bold {
+    background-image: url(icons/bold.png);
+}
+
+/* italic button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_italic {
+    background-image: url(icons/italic.png);
+}
+
+/* underline button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_underline {
+    background-image: url(icons/underline.png);
+}
+
+/* strikethrough button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_strike {
+    background-image: url(icons/strikethrough.png);
+}
+
+/* foreground button with color indicator */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_foreground {
+    background-image: url(icons/foreground_blank.png);
+    border-color: #000;
+}
+
+/* ordered list button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_ol {
+    background-image: url(icons/orderedlist.png);
+}
+
+/* unordered list button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_ul {
+    background-image: url(icons/unorderedlist.png);
+}
+
+/* align center button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_center {
+    background-image: url(icons/centeralign.png);
+}
+
+/* align left button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_left {
+    background-image: url(icons/leftalign.png);
+}
+
+/* align right button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_right {
+    background-image: url(icons/rightalign.png);
+}
+
+/* full justify button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_justify {
+    background-image: url(icons/fulljustify.png);
+}
+
+/* header 1 button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_h1 {
+    background-image: url(icons/h1.png);
+}
+
+/* header 2 button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_h2 {
+    background-image: url(icons/h2.png);
+}
+
+/* header 3 button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_h3 {
+    background-image: url(icons/h3.png);
+}
+
+/* reset to <p> style button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_p {
+    background-image: url(icons/paragraph.png);
+}
+
+/* view html sourc button */
+div.wysiwyg_container div.wysiwyg_toolbar div.wysiwyg_source {
+    background-image: url(icons/source.png);
+}
+
+
+
+
+/* Tricks */
+/* fix wonkiness with resizing wysiwyg using jquery ui */
+.ui-resizable-helper { border: 5px solid #EFEFEF; margin: -5px; }
+
+
